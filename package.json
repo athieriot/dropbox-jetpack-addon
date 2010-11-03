@@ -1,6 +1,6 @@
 {
     "name": "dropbox-jetpack-addon", 
-    "author": "Aur\u00e9lien Thieriot", 
+    "author": "Aurelien Thieriot", 
     "dependencies": [
         "jetpack-core", 
         "addon-kit"
