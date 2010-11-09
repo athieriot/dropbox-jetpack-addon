@@ -27,10 +27,18 @@ exports.testGetToken = function(test) {
 
 exports.testGetAccountInfo = function(test) {
 	dropbox.accountInfo(applicationData, clientData, function(response) {
-		test.assertEqual(response.status, '200');
-		console.log(response.text);
-		console.log(response.json.display_name);	
+		console.info(' Account Info test result : ' + response.text);
+	
+		//TODO: Better test case
+		if(response.status != '200') return;
+		if(response.json.display_name != 'Aur\u00e9lien Thieriot') return;
+		if(response.json.country != 'FR') return;
+		if(response.json.email != 'a.thieriot@gmail.com') return;
+
+		test.pass('Account Info test : passed');
 		test.done();
 	});		
 	test.waitUntilDone(100000);
 };
+
+
