@@ -5,6 +5,11 @@ var clientData = {
         "secret": "34s78vlfshegojm"
 };
 
+var applicationData = {
+        "token": "of0tf7a61z9zf83",
+        "secret": "5m0xlf74kkewvtl"
+};
+
 exports.ensureWhoDropBoxLibIs = function(test) {
 	test.assertEqual(dropbox.who(), 'DropBox JS Library ! What else ?', "DropBox Library is aware of itself");
 };
@@ -21,7 +26,7 @@ exports.testGetToken = function(test) {
 */
 
 exports.testGetAccountInfo = function(test) {
-	dropbox.accountInfo(clientData, function(response) {
+	dropbox.accountInfo(applicationData, clientData, function(response) {
 		test.assertEqual(response.status, '200');
 		console.log(response.text);
 		console.log(response.json.display_name);	
