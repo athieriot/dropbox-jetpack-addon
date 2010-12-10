@@ -1,13 +1,13 @@
 {
-    "name": "dropbox-jetpack-addon", 
+    "description": "An addon for Mozilla apps that allowed users to browse their Dropbox folder.", 
     "author": "Aurelien Thieriot", 
     "dependencies": [
         "js-oauth", 
-        "jetpack-core", 
+        "api-utils", 
         "addon-kit"
     ], 
     "version": 0.10000000000000001, 
     "fullName": "DropBox JetPack Addon", 
-    "id": "jid0-l5y61OFLOrfl9QASBXZfvbS3fA0", 
-    "description": "An addon for Mozilla apps that allowed users to browse their Dropbox folder."
+    "id": "jid0-0TkDGRyKWj0XbSNP6EBFpQam5Fk", 
+    "name": "dropbox-jetpack-addon"
 }

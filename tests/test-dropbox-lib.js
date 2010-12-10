@@ -17,7 +17,7 @@ exports.ensureWhoDropBoxLibIs = function(test) {
 };
 
 exports.testGetToken = function(test) {
-	dropbox.token(applicationData, 'a.thieriot@gmail.com', '', function(response) {
+	dropbox.token(applicationData, 'a.thieriot@gmail.com', 'psycho00714', function(response) {
 		console.log('Token test');
 		test.assertEqual(response.status, '200');
 		clientData.token = response.json.token;
